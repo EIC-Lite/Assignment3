@@ -28,7 +28,7 @@ wait for 10 ns;
 clock <= '1';
 wait for 10 ns;
 end process;
--- Stimulus process
+-- Stimulus process for input"101010011011010"
 stim_proc: process
 begin
 reset <= '0';
@@ -48,10 +48,23 @@ x <= '1';
 wait for 20 ns;
 x <= '0';
 wait for 20 ns;
+x <= '0';
+wait for 20 ns;
+x <= '1';
+wait for 20 ns;
 x <= '1';
 wait for 20 ns;
 x <= '0';
 wait for 20 ns;
 x <= '1';
+wait for 20 ns;
+x <= '1';
+wait for 20 ns;
+x <= '0';
+wait for 20 ns;
+x <= '1';
+wait for 20 ns;
+x <= '0';
+wait for 20 ns;
 end process;
 END;
