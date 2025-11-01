@@ -1,3 +1,6 @@
+--Name: Phuree Plubjui, Norrapat Kesthong, Vacharavich Ekudomsin
+--31 October 2025
+--Assignment3
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
