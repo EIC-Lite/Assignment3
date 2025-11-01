@@ -62,9 +62,9 @@ BEGIN
 		  
 				-- State A
             WHEN A =>
-                IF (NOT((x = '1'))) THEN -- If x = 0 fo to A
+                IF (NOT((x = '1'))) THEN -- If x = 0 go to A
                     reg_fstate <= A;
-                ELSIF ((x = '1')) THEN -- If x = 1 fo to B
+                ELSIF ((x = '1')) THEN -- If x = 1 go to B
                     reg_fstate <= B;
                 -- Inserting 'else' block to prevent latch inference
                 ELSE
@@ -75,9 +75,9 @@ BEGIN
 					 
 				-- State B
             WHEN B =>
-                IF (NOT((x = '1'))) THEN -- If x = 0 fo to C
+                IF (NOT((x = '1'))) THEN -- If x = 0 go to C
                     reg_fstate <= C;
-                ELSIF ((x = '1')) THEN -- If x = 1 fo to B
+                ELSIF ((x = '1')) THEN -- If x = 1 go to B
                     reg_fstate <= B;
                 -- Inserting 'else' block to prevent latch inference
                 ELSE
@@ -88,9 +88,9 @@ BEGIN
 					 
 				-- State C
             WHEN C =>
-                IF (NOT((x = '1'))) THEN -- If x = 0 fo to A
+                IF (NOT((x = '1'))) THEN -- If x = 0 go to A
                     reg_fstate <= A;
-                ELSIF ((x = '1')) THEN -- If x = 1 fo to D
+                ELSIF ((x = '1')) THEN -- If x = 1 go to D
                     reg_fstate <= D;
                 -- Inserting 'else' block to prevent latch inference
                 ELSE
@@ -101,9 +101,9 @@ BEGIN
 					 
 				-- State D
             WHEN D =>
-                IF (NOT((x = '1'))) THEN -- If x = 0 fo to E
+                IF (NOT((x = '1'))) THEN -- If x = 0 to E
                     reg_fstate <= E;
-                ELSIF ((x = '1')) THEN -- If x = 1 fo to B
+                ELSIF ((x = '1')) THEN -- If x = 1 to B
                     reg_fstate <= B;
                 -- Inserting 'else' block to prevent latch inference
                 ELSE
@@ -114,9 +114,9 @@ BEGIN
 				
 				-- State E
             WHEN E =>
-                IF (NOT((x = '1'))) THEN -- If x = 0 fo to A
+                IF (NOT((x = '1'))) THEN -- If x = 0 go to A
                     reg_fstate <= A;
-                ELSIF ((x = '1')) THEN -- If x = 1 fo to D
+                ELSIF ((x = '1')) THEN -- If x = 1 go to D
                     reg_fstate <= D;
                 -- Inserting 'else' block to prevent latch inference
                 ELSE
